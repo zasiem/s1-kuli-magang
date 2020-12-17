@@ -32,6 +32,8 @@ tweets_df = pd.DataFrame(columns = ["Date", "Tweet"])
 
 for index, text_query in enumerate(text_queries) :
 
+    tweets_df = pd.DataFrame(columns = ["Date", "Tweet"])
+
     for i,tweet in enumerate(sntwitter.TwitterSearchScraper(text_query + 'since:2020-10-16 until:2020-12-16').get_items()) :
         if i > count :
             break
@@ -40,20 +42,3 @@ for index, text_query in enumerate(text_queries) :
         tweets_df.loc[df_length] = tweet_list
 
     tweets_df.to_csv("File Startup {}.csv".format(index+1))    
-
-    # try:
-    #     # Creation of query method using parameters
-    #     tweets = tweepy.Cursor(api.search,q=text_query, lang='id', ).items(count)
-        
-    #     # Pulling information from tweets iterable object
-    #     tweets_list = [[tweet.created_at, tweet.id, tweet.text] for tweet in tweets]
-        
-    #     # Creation of dataframe from tweets list
-    #     # Add or remove columns as you remove tweet information
-    #     tweets_df = pd.DataFrame(tweets_list)
-    #     print(tweets_df)
-
-    #     tweets_df.to_csv("File Startup {}.csv".format(index+1))
-        
-    # except BaseException as e:
-    #     print('failed on_status,',str(e))
