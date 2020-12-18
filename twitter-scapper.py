@@ -7,22 +7,22 @@ auth.set_access_token('key', 'key')
 api = tweepy.API(auth, wait_on_rate_limit=True)
 
 text_queries = [
-    'lang:id #StartUpEP1',
-    'lang:id #StartUpEP2',
-    'lang:id #StartUpEP3',
-    'lang:id #StartUpEP4',
-    'lang:id #StartUpEP5',
-    'lang:id #StartUpEP6',
-    'lang:id #StartUpEP7',
-    'lang:id #StartUpEP8',
-    'lang:id #StartUpEP9',
-    'lang:id #StartUpEP10',
-    'lang:id #StartUpEP11',
-    'lang:id #StartUpEP12',
-    'lang:id #StartUpEP13',
-    'lang:id #StartUpEP14',
-    'lang:id #StartUpEP15',
-    'lang:id #StartUpEP16',
+    '#StartUpEP1',
+    '#StartUpEP2',
+    '#StartUpEP3',
+    '#StartUpEP4',
+    '#StartUpEP5',
+    '#StartUpEP6',
+    '#StartUpEP7',
+    '#StartUpEP8',
+    '#StartUpEP9',
+    '#StartUpEP10',
+    '#StartUpEP11',
+    '#StartUpEP12',
+    '#StartUpEP13',
+    '#StartUpEP14',
+    '#StartUpEP15',
+    '#StartUpEP16',
 ]
 
 count = 5

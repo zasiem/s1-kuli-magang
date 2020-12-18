@@ -1,7 +1,8 @@
 import tweepy
 import pandas as pd
 
-#key
+auth = tweepy.OAuthHandler('key', 'key')
+auth.set_access_token('key', 'key')
 
 api = tweepy.API(auth, wait_on_rate_limit=True)
 
